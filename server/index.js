@@ -45,12 +45,12 @@ app.post('/api/generate-stanza', async (req, res) => {
         {
           role: 'system',
           content: `You are a helpful, creative poet who extends poems 
-  in a consistent style and tone. Write exactly one short stanza (1-3 lines).`,
+  in a consistent style and tone. Write exactly one short stanza that follows what you were given (1-3 lines). Do not include quotation marks. Do not repeat what the user provided in the previous stanza.`,
         },
         {
           role: 'user',
           content: `So far, the poem is:\n"${poemSoFar}"\n\nThe user added: "${userContribution}"
-  Please continue the poem with one additional stanza in a similar style.`,
+            Create just the text to immediately follow the user's addition, ommiting the users addition itself.`,
         },
       ];
   
@@ -58,7 +58,7 @@ app.post('/api/generate-stanza', async (req, res) => {
       const response = await axios.post(
         'https://api.openai.com/v1/chat/completions',
         {
-          model: 'gpt-3.5-turbo',
+          model: 'gpt-4o-mini',
           messages,
           max_tokens: 100,
           temperature: 0.7,
@@ -91,7 +91,7 @@ app.post('/api/generate-image', async (req, res) => {
     // Craft a prompt for DALL·E (or another image model)
     // Add a style to guide the artistic output
     const imagePrompt = `
-Create a single illustration in a watercolor style inspired by this poetic stanza:
+Create a single photorealistic scene inspired by this poetic stanza:
 "${stanza}"
     `;
 
