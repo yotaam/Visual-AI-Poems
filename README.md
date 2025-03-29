@@ -20,9 +20,7 @@ A creative web platform where users co-write a poem with an AI and generate stun
 
 ## 📸 Demo
 
-🔗 [Live Demo on Vercel](https://your-vercel-project.vercel.app)
-
-*(Replace with your actual deployment link.)*
+🔗 [Live Demo on Vercel](https://your-vercel-project.vercel.app) (inactive atm)
 
 ## 🏗️ Tech Stack
 
