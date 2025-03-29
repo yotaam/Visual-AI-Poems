@@ -89,6 +89,8 @@ Open [http://localhost:3000](http://localhost:3000) to start co-creating.
 - ⏳ Real-time collaboration (multi-user writing room)
 - 🌍 Multilingual poem writing
 
+Reach out if you're interested in contributing!
+
 ## 👤 Author
 
 **Yotam Twersky**  
