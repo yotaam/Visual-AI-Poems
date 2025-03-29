@@ -2,7 +2,8 @@
 
 A creative web platform where users co-write a poem with an AI and generate stunning illustrations for each stanza. The result is a scrollable, visual poem — a fusion of human imagination and machine artistry.
 
-![poem preview](https://via.placeholder.com/800x400?text=Poem+Preview+Placeholder)
+<img width="907" alt="image" src="https://github.com/user-attachments/assets/49c5a148-11be-41c2-bb9d-c5b47fdb955c" />
+
 
 ## ✨ Features
 
